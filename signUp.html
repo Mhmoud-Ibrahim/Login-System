@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+   
+   
+</head>
+<body>
+    <div class="container mt-5 py-5">
+        <div class="w-75 form mt-5 p-5 m-auto text-center form-container ">
+            <h2 class="text-info mb-4">Smart Login System</h2>
+            <div class="mb-3 ">
+            <input id="username" type="text" class="form-control bg-transparent text-white" id="username" placeholder="Enter your name">
+            <p id="nameAlert" class="d-none text-danger">include at least 3 letters starting with capital, second name is optional</p>
+            </div>
+            <div class="mb-3 ">
+            <input id="userEmail" type="email" class="form-control bg-transparent text-white" id="userEmail" placeholder="Enter your email">
+            <p id="EmailAlert" class="d-none text-danger">name@example.com</p>
+            </div>
+            <div class="mb-3">
+                <input id="userPassword" type="password" class="form-control bg-transparent text-white mb-3"  placeholder="Enter your password">
+                <p id="PasswordAlert" class="d-none text-danger m-0">you must strenth your password, from 5 to 10 characters</p>
+
+            </div>
+
+            <p class="text-danger d-none mb-0" id="accountMsg">this account is exist before</p>
+            <p class="text-success d-none" id="confirmed">Success</p>
+            <p class="text-danger d-none mb-0" id="tryAgain">failed Try again</p>
+            <a id="signupBtn" onclick="signUp()" class="btn btn-outline-info w-100 mb-3 mt-4 text-decoration-none">Sign Up</a>
+            <p class="text-white d-block">you have an accoount? <a href="index.html" class="text-white text-decoration-none">Sign In</a></p>
+            <a href="index.html" class="d-none btn btn-outline-success text-white w-25 m-auto" id="signin">signin</a>
+        </div>
+    </div>
+    <script src="js/index.js" ></script>
+</body>
+</html>

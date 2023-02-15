@@ -2,28 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="css/all.min.css">
+    <title>Login</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body >
-
-<div  class="container  mt-5 text-center  w-50 m-auto p-4   border border-1 border-dark">
-    <h1>Smart Login System</h1>
-<input id="LoginEmail" class="form-control  bg-transparent mt-4 mb-2" type="email" placeholder="Enter your Email">
-<input id="LoginPassword" class="form-control  bg-transparent mt-4 mb-2" type="password" placeholder="Enter your password">
-
-<a id="loginBtn" class="w-100 btn  btn-outline-info mt-4 mb-4" onclick="login()" >login</a>
-
-<h6 class="text-light ">Don't have an account? <a href="singup.html">Sign Up</a></h6></div>
-
-
-
-
-<script src="js/bootstrap.bundle.js" ></script>
+<body>
+    <div class="container mt-5  py-5">
+        <div class="w-75 form p-5 mt-5 m-auto text-center form-container ">
+            <h2 class="text-info mb-4">Smart Login System</h2>
+            <div class="mb-3 ">
+            <input type="text" class="form-control bg-transparent text-white" id="loginEmail" placeholder="Enter you email">
+            </div>
+            <div class="mb-3">
+            <input type="password" class="form-control bg-transparent text-white mb-5" id="loginPassword" placeholder="Enter your password">
+            </div>
+            <p class="text-danger d-none" id="fillMsg">All inputs is required</p>
+            <p class="text-danger d-none" id="wrongMsg">your email or password is incorrect</p>
+            <a class="btn btn-outline-info w-100 mb-3 text-decoration-none" id="loginBtn" onclick="loginUser()">Login</a>
+            <p class="text-white">don't have an accoount? <a href="signUp.html" class="text-white text-decoration-none">Sign Up</a></p>
+        </div>
+    </div>
     <script src="js/index.js" ></script>
 </body>
 </html>
