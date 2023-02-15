@@ -96,11 +96,9 @@ function validateEmail() //validate email function
     }
     else
     {
-        
         userEmailInput.classList.add("is-invalid");
         userEmailInput.classList.remove("is-valid");
         userEmailAlert.classList.replace("d-none", "d-block");
-
         return false
     }
 }
@@ -108,10 +106,8 @@ function validateEmail() //validate email function
 function found() //found function
 {
     var accountMsg = document.getElementById("accountMsg");
-    
     for(var i = 0; i < container.length; i++)
     {
-
         if(container[i].name.toLowerCase() == usernameInput.value.toLowerCase() || container[i].email.toLowerCase() == userEmailInput.value.toLowerCase())
         {
             accountMsg.classList.replace("d-none", "d-block");
